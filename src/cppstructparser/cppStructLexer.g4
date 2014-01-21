@@ -14,6 +14,13 @@ RIGHTPARANS : '}' ;
 INT : 'int' ;
 FLOAT : 'float' ;
 DOUBLE : 'double' ;
+STD_NAMESPACE : 'std' ;
+DOUBLE_COLON : '::';
+LEFT_ANGLE_BRACKET : '<';
+RIGHT_ANGLE_BRACKET : '>';
+MAP : 'map';
+VECTOR : 'vector';
+               
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//关键字：
 
 

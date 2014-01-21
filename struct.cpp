@@ -7,4 +7,5 @@ struct aStruct
         double aDouble;
     };
     anInner anInnerInstance;
+    std::vector<int> v;
 };
