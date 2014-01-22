@@ -8,4 +8,5 @@ struct aStruct
     };
     anInner anInnerInstance;
     std::vector<int> v;
+    std::vector<map<int, double> > v2;
 };
