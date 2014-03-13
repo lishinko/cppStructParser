@@ -6,22 +6,21 @@
 grammar struct;
 import cppLexerRules;
 
-structDefine : STRUCT structBody ; //structç”±structå…³é”®å­—å’Œç»“æ„ä½“å†…å®¹ç»„æˆ
-structBody : name=INDENTIFIER LEFTPARANS fields+ RIGHTPARANS SEMICOLON; //ç»“æ„ä½“å†…å®¹æ˜¯ä¸€ç³»åˆ—çš„å­—æ®µ
+//structDefine : STRUCT structBody ; //structÓÉstruct¹Ø¼ü×ÖºÍ½á¹¹ÌåÄÚÈİ×é³É
+//structBody : name=INDENTIFIER '{' field+ '}' ';'; //½á¹¹ÌåÄÚÈİÊÇÒ»ÏµÁĞµÄ×Ö¶Î
+structDefine : 'struct' name=INDENTIFIER '{' structField '}' ';';
+structField : (fieldDecl | structDefine)+;//structÄÚ²¿¿ÉÒÔÊÇ×Ö¶ÎÉùÃ÷»òÕßÄÚÇ¶µÄstruct¶¨Òå
 
-fields : fieldDecl3 | structDefine ; //structå†…éƒ¨å¯ä»¥æ˜¯å­—æ®µå£°æ˜æˆ–è€…å†…åµŒçš„structå®šä¹‰
-
-fieldDecl3 : fieldType fieldName SEMICOLON ;//å­—æ®µå£°æ˜ï¼šç±»å‹ å­—æ®µåç§° åˆ†å·
+fieldDecl : fieldType INDENTIFIER ';' ;//×Ö¶ÎÉùÃ÷£ºÀàĞÍ ×Ö¶ÎÃû³Æ ·ÖºÅ
 
 fieldType : normalType | genericCollType ;
-fieldName : INDENTIFIER ;
 
-//æ¨¡æ¿ç±»å‹ï¼šstd::vector<int>è¿™æ ·çš„ï¼Œstd::å¯ä»¥å»æ‰ï¼Œ
-genericCollType : NAMESPACE_PREFIX? CollType LEFT_ANGLE_BRACKET elementType RIGHT_ANGLE_BRACKET
+//Ä£°åÀàĞÍ£ºstd::vector<int>ÕâÑùµÄ£¬std::¿ÉÒÔÈ¥µô£¬
+genericCollType : 'std::'? COLLTYPE '<' elementType '>'
                 ;
 elementType : fieldType | mapType;
 normalType : KEYWORD | INDENTIFIER ;
-mapType : normalType COMMA normalType ;
+mapType : normalType ',' normalType ;
 
-CollType : MAP | VECTOR //ç›®å‰æ”¯æŒstd::mapå’Œstd::vector
+COLLTYPE : MAP | VECTOR //Ä¿Ç°Ö§³Östd::mapºÍstd::vector
          ;

@@ -4,6 +4,8 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import com.woyao.XinggangLi.parser.*;
 
+import com.woyao.XinggangLi.rules.*;
+
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -20,8 +22,10 @@ public class Main {
         try{
             ParseTree tree = parser.structDefine();
 
-            fieldsVisitor visitor = new fieldsVisitor();
-            visitor.visit(tree);
+            ParseTreeWalker walker = new ParseTreeWalker();
+            structFieldsExtractor listener = new structFieldsExtractor();
+            walker.walk(listener, tree);
+            //System.out.println(listener.);
 
             System.out.println(tree.toStringTree(parser));
         }
@@ -29,7 +33,8 @@ public class Main {
         {
             ex.printStackTrace();
         }
-        System.out.println("hello world");
+        //怎么回事？intellij对直接的"hello world"会提示class or interfaces expected,只好改成这样子，它提示一个警告，不管了
+        System.out.println( new String("hello world"));
 
     }
 }
