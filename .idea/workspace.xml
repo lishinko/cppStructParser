@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="记录struct的字段信息。&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -77,7 +76,7 @@
       <file leaf-file-name="structFieldsExtractor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="38" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="986">
+            <state line="32" column="5" selection-start="860" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#481#489#0" expanded="true" />
@@ -89,10 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="10" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.63829786" vertical-offset="465" max-vertical-offset="935">
+            <state line="30" column="9" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="935">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="structRewriter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="27" selection-start="609" selection-end="609" vertical-scroll-proportion="0.64803314" vertical-offset="10" max-vertical-offset="544">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,8 +145,9 @@
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/fieldsVisitor.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/structLexer.java" />
-        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       </list>
     </option>
   </component>
@@ -370,7 +381,11 @@
       <created>1394712923454</created>
       <updated>1394712923454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="记录struct的字段信息。&#10;">
+      <created>1394716582907</created>
+      <updated>1394716582907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -406,14 +421,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -537,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/struct.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="93" selection-start="1180" selection-end="1269" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2465">
@@ -561,13 +569,6 @@
     <entry file="file://$PROJECT_DIR$/cppStructParser.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/v4/runtime/ParserRuleContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="50" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.3505618" vertical-offset="371" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
@@ -616,9 +617,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.7978723" vertical-offset="1785" max-vertical-offset="12121">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="2" selection-start="208" selection-end="209" vertical-scroll-proportion="0.38716355" vertical-offset="0" max-vertical-offset="483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/v4/runtime/ParserRuleContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="380" selection-end="380" vertical-scroll-proportion="0.305618" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="9" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="935">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="38" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="986">
+        <state line="32" column="5" selection-start="860" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#481#489#0" expanded="true" />
@@ -629,9 +660,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/v4/runtime/TokenStreamRewriter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.63829786" vertical-offset="465" max-vertical-offset="935">
+        <state line="14" column="11" selection-start="666" selection-end="666" vertical-scroll-proportion="0.3505618" vertical-offset="65" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/runtime/BufferedTokenStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.19101124" vertical-offset="0" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="27" selection-start="609" selection-end="609" vertical-scroll-proportion="0.64803314" vertical-offset="10" max-vertical-offset="544">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
