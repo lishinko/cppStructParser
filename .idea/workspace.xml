@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structListener.java" />
-      <change type="DELETED" beforePath="E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\parser\fieldDefinationNotFoundException.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\parser\fieldsVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\parser\structBaseVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\parser\structVisitor.java" afterPath="" />
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="记录struct的字段信息。&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/struct.tokens" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/struct.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.tokens" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -88,22 +77,13 @@
       <file leaf-file-name="structFieldsExtractor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+            <state line="30" column="38" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="986">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#480#522#0" expanded="true" />
-                <element signature="e#974#982#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="structLexer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="15" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0" vertical-offset="808" max-vertical-offset="2465">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#481#489#0" expanded="true" />
+                <element signature="method#getGeneratedMethods#0;class#structFieldsExtractor#0" expanded="true" />
+                <element signature="e#806#852#0" expanded="true" />
+                <element signature="e#1510#1518#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,7 +92,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="1136" selection-end="1136" vertical-scroll-proportion="1.1304348" vertical-offset="49" max-vertical-offset="782">
+            <state line="45" column="10" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.63829786" vertical-offset="465" max-vertical-offset="935">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,6 +110,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Xinggang Li" />
         <option value="李兴钢" />
       </list>
     </option>
@@ -385,7 +366,11 @@
       <created>1392695702433</created>
       <updated>1392695702433</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="使用listener实现&#10;现在FullQualifiedName好了">
+      <created>1394712923454</created>
+      <updated>1394712923454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -411,9 +396,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -421,7 +406,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -451,7 +436,9 @@
     <MESSAGE value="使用Intellij的git插件。这里明明修改了.gitignore，为什么不能在diff里面找到？" />
     <MESSAGE value="更新workspace文件。这个文件是干什么的？&#10;" />
     <MESSAGE value="改为使用listener实现&#10;现在FullQualifiedName好了&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="改为使用listener实现&#10;现在FullQualifiedName好了&#10;" />
+    <MESSAGE value="使用listener实现&#10;现在FullQualifiedName好了" />
+    <MESSAGE value="记录struct的字段信息。&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="记录struct的字段信息。&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -585,13 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="24" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.3319149" vertical-offset="575" max-vertical-offset="8160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/v4/runtime/tree/ParseTree.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="21" selection-start="456" selection-end="456" vertical-scroll-proportion="0.44541484" vertical-offset="0" max-vertical-offset="458">
@@ -613,26 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="15" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0" vertical-offset="808" max-vertical-offset="2465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#522#0" expanded="true" />
-            <element signature="e#974#982#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.7.0_45/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="803" column="16" selection-start="27425" selection-end="27425" vertical-scroll-proportion="0.54451346" vertical-offset="12929" max-vertical-offset="18836">
@@ -640,9 +600,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="15" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.33333334" vertical-offset="808" max-vertical-offset="2465">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="56" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.0787234" vertical-offset="728" max-vertical-offset="8160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="986">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#489#0" expanded="true" />
+            <element signature="method#getGeneratedMethods#0;class#structFieldsExtractor#0" expanded="true" />
+            <element signature="e#806#852#0" expanded="true" />
+            <element signature="e#1510#1518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="1136" selection-end="1136" vertical-scroll-proportion="1.1304348" vertical-offset="49" max-vertical-offset="782">
+        <state line="45" column="10" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.63829786" vertical-offset="465" max-vertical-offset="935">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
