@@ -16,11 +16,11 @@ COMMA : ',';
 
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//¹Ø¼ü×Ö£º
 
-WS : [ \t\r\n]+ -> skip ;//channel(HIDDEN) ; // skip spaces, tabs, newlines
+WS : [ \t\r\n]+ -> channel(HIDDEN) ; // skip spaces, tabs, newlines
 COMMENT
-    :   '/*' .*? '*/' -> skip
+    :   '/*' .*? '*/' -> channel(HIDDEN)
     ;
 
 LINE_COMMENT
-    :   '//' ~[\r\n]* -> skip
+    :   '//' ~[\r\n]* -> channel(HIDDEN)
     ;

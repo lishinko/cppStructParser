@@ -5,18 +5,18 @@ import org.antlr.v4.runtime.tree.*;
 import com.woyao.XinggangLi.parser.*;
 
 import com.woyao.XinggangLi.rules.*;
+import org.stringtemplate.v4.STGroup;
+import org.stringtemplate.v4.STGroupFile;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         String curPath = System.getProperty("user.dir");
-        curPath += "\\struct.cpp";
 
-        ANTLRInputStream input = new ANTLRInputStream(new FileReader(curPath));
+        ANTLRInputStream input = new ANTLRInputStream(new FileReader(curPath + "\\struct.cpp"));
         structLexer lexer = new structLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         structParser parser = new structParser(tokens);
@@ -26,17 +26,22 @@ public class Main {
             ParseTreeWalker walker = new ParseTreeWalker();
             structFieldsExtractor listener = new structFieldsExtractor();
             walker.walk(listener, tree);
+
+            STGroup group = new STGroupFile(curPath + "\\methodDecl.stg");
+            structRewriter rewriter = new structRewriter(tokens, group);
+            walker.walk(rewriter, tree);
+            System.out.println(rewriter.rewriter.getText());
             //System.out.println(listener.);
 
-            for(Map.Entry<structParser.StructDefineContext, structFieldsExtractor.structInfo> entry : listener.getGeneratedMethods().entrySet()) {
-                System.out.println(entry.getValue().fullQualifiedName);
-                for(String fieldName : entry.getValue().fieldNames) {
-                    System.out.println("    " + fieldName);
-                }
-                System.out.println("    ");
-            }
+//            for(Map.Entry<structParser.StructDefineContext, structFieldsExtractor.structInfo> entry : listener.getGeneratedMethods().entrySet()) {
+//                System.out.println(entry.getValue().fullQualifiedName);
+//                for(String fieldName : entry.getValue().fieldNames) {
+//                    System.out.println("    " + fieldName);
+//                }
+//                System.out.println("    ");
+//            }
 
-            System.out.println(tree.toStringTree(parser));
+//            System.out.println(tree.toStringTree(parser));
         }
         catch(RecognitionException ex)
         {

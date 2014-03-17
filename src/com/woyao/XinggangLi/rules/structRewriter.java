@@ -1,8 +1,10 @@
 package com.woyao.XinggangLi.rules;
 
 import com.woyao.XinggangLi.parser.structBaseListener;
+import com.woyao.XinggangLi.parser.structLexer;
 import com.woyao.XinggangLi.parser.structParser;
 import org.antlr.v4.runtime.BufferedTokenStream;
+import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.TokenStreamRewriter;
 import org.antlr.v4.runtime.misc.NotNull;
 
@@ -13,14 +15,35 @@ import org.antlr.v4.runtime.misc.NotNull;
  * 2,需要将struct的atom字段替换掉(用来实现自动初始化,这样就不需要构造函数了),
  *
  */
+import org.stringtemplate.v4.*;
+
+import java.util.List;
+
 public class structRewriter extends structBaseListener {
     BufferedTokenStream tokens;
-    TokenStreamRewriter rewriter;
-    structRewriter(BufferedTokenStream tokens) {
+    STGroup group;
+    public TokenStreamRewriter rewriter;
+    public structRewriter(BufferedTokenStream tokens, STGroup group) {
         this.tokens = tokens;
         rewriter = new TokenStreamRewriter(tokens);
+        this.group = group;
     }
     @Override public void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx) {
         //原子数据不能被区分，在这里需要使用独立的配置文件
+    }
+    @Override public void exitStructDefine(@NotNull structParser.StructDefineContext ctx) {
+        Token rightCurlyBrace = ctx.rightCurlyBrace;
+        ST st = group.getInstanceOf("decl");
+        int i = rightCurlyBrace.getTokenIndex();
+        List<Token> wsChannel = tokens.getHiddenTokensToLeft(i, structLexer.WS);
+        String wss = "\n";
+        if (wsChannel != null) {
+            Token ws = wsChannel.get(0);
+            if (ws != null) {
+                wss = ws.getText();
+            }
+        }
+        String tips = "    " + st.render() + wss;
+        rewriter.insertBefore(rightCurlyBrace, tips);
     }
 }

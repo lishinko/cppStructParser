@@ -1,13 +1,16 @@
 // Generated from E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\struct.g4 by ANTLR 4.1
 package com.woyao.XinggangLi.parser;
-import org.antlr.v4.runtime.atn.*;
-import org.antlr.v4.runtime.dfa.DFA;
+
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.misc.*;
-import org.antlr.v4.runtime.tree.*;
+import org.antlr.v4.runtime.atn.ATN;
+import org.antlr.v4.runtime.atn.ATNSimulator;
+import org.antlr.v4.runtime.atn.ParserATNSimulator;
+import org.antlr.v4.runtime.atn.PredictionContextCache;
+import org.antlr.v4.runtime.dfa.DFA;
+import org.antlr.v4.runtime.tree.ParseTreeListener;
+import org.antlr.v4.runtime.tree.TerminalNode;
+
 import java.util.List;
-import java.util.Iterator;
-import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class structParser extends Parser {
@@ -50,6 +53,8 @@ public class structParser extends Parser {
 	}
 	public static class StructDefineContext extends ParserRuleContext {
 		public Token name;
+		public Token leftCurlyBrace;
+		public Token rightCurlyBrace;
 		public TerminalNode INDENTIFIER() { return getToken(structParser.INDENTIFIER, 0); }
 		public StructFieldContext structField() {
 			return getRuleContext(StructFieldContext.class,0);
@@ -76,9 +81,9 @@ public class structParser extends Parser {
 			{
 			setState(16); match(STRUCT);
 			setState(17); ((StructDefineContext)_localctx).name = match(INDENTIFIER);
-			setState(18); match(LEFTPARANS);
+			setState(18); ((StructDefineContext)_localctx).leftCurlyBrace = match(LEFTPARANS);
 			setState(19); structField();
-			setState(20); match(RIGHTPARANS);
+			setState(20); ((StructDefineContext)_localctx).rightCurlyBrace = match(RIGHTPARANS);
 			setState(21); match(SEMICOLON);
 			}
 		}
