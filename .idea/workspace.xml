@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="一些修改&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/methodDecl.stg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -458,7 +451,11 @@
       <created>1394718318566</created>
       <updated>1394718318566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大">
+      <created>1395063998218</created>
+      <updated>1395063998218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -494,7 +491,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -527,7 +524,8 @@
     <MESSAGE value="使用listener实现&#10;现在FullQualifiedName好了" />
     <MESSAGE value="记录struct的字段信息。&#10;" />
     <MESSAGE value="一些修改&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="一些修改&#10;" />
+    <MESSAGE value="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
