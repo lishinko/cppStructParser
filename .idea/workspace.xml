@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;">
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -76,7 +76,7 @@
       <file leaf-file-name="structRewriter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.45755693" vertical-offset="0" max-vertical-offset="680">
+            <state line="40" column="51" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.36645964" vertical-offset="214" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -94,7 +94,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1105">
+            <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,7 +105,7 @@
       <file leaf-file-name="generateParsingMethod.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="11" column="36" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -490,7 +490,11 @@
       <created>1395130522718</created>
       <updated>1395130522718</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="重构下，提取一个方法。&#10;暂时能想到的就是这么多了，还有AutoInit，不过这个就不着急了">
+      <created>1395130825093</created>
+      <updated>1395130825093</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -564,7 +568,8 @@
     <MESSAGE value="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大&#10;" />
     <MESSAGE value="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;" />
     <MESSAGE value="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;" />
+    <MESSAGE value="重构下，提取一个方法。&#10;暂时能想到的就是这么多了，还有AutoInit，不过这个就不着急了" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构下，提取一个方法。&#10;暂时能想到的就是这么多了，还有AutoInit，不过这个就不着急了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -864,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/methodDecl.stg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="37" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/stringtemplate/v4/ST.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="28" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.3505618" vertical-offset="847" max-vertical-offset="1989">
@@ -878,9 +876,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/methodDecl.stg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="11" column="36" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -898,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.45755693" vertical-offset="0" max-vertical-offset="680">
+        <state line="40" column="51" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.36645964" vertical-offset="214" max-vertical-offset="748">
           <folding />
         </state>
       </provider>

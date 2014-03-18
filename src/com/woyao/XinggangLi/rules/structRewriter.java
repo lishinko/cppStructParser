@@ -36,6 +36,10 @@ public class structRewriter extends structBaseListener {
         rewriter.insertBefore(rightCurlyBrace, tips);
     }
 
+    /**
+     * 添加一些空格。正常情况下，我们写的代码都是有空格的，通过这种办法可以让生成的代码好看一些。
+     * 当然了，这里是直接写死的，也就是，如果用户自己的代码就格式不好看，这个只会让它更难看。。
+     */
     private String getSomeWhiteSpaceBefore(Token rightCurlyBrace) {
         int i = rightCurlyBrace.getTokenIndex();
         List<Token> wsChannel = tokens.getHiddenTokensToLeft(i, structLexer.WHITESPACE);
