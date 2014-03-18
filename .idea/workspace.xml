@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -77,7 +76,7 @@
       <file leaf-file-name="structRewriter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.5983437" vertical-offset="0" max-vertical-offset="646">
+            <state line="30" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.45755693" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -173,10 +172,10 @@
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
         <option value="$PROJECT_DIR$/struct.cpp" />
         <option value="$PROJECT_DIR$/methodDecl.stg" />
-        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       </list>
     </option>
   </component>
@@ -369,6 +368,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="889" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -486,7 +486,11 @@
       <created>1395113700843</created>
       <updated>1395113700843</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;">
+      <created>1395130522718</created>
+      <updated>1395130522718</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -559,7 +563,8 @@
     <MESSAGE value="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大" />
     <MESSAGE value="使用stringtemplate&#10;生成的函数签名倒是没有什么，但是总是有一个空格不能添加。影响不大&#10;" />
     <MESSAGE value="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;" />
+    <MESSAGE value="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -893,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.5983437" vertical-offset="0" max-vertical-offset="646">
+        <state line="30" column="44" selection-start="930" selection-end="930" vertical-scroll-proportion="0.45755693" vertical-offset="0" max-vertical-offset="680">
           <folding />
         </state>
       </provider>

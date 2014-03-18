@@ -28,12 +28,15 @@ public class structRewriter extends structBaseListener {
         rewriter = new TokenStreamRewriter(tokens);
         this.group = group;
     }
-    @Override public void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx) {
-        //原子数据不能被区分，在这里需要使用独立的配置文件
-    }
     @Override public void exitStructDefine(@NotNull structParser.StructDefineContext ctx) {
         Token rightCurlyBrace = ctx.rightCurlyBrace;
         ST st = group.getInstanceOf("decl");
+        String wss = getSomeWhiteSpaceBefore(rightCurlyBrace);
+        String tips = "    " + st.render() + wss;
+        rewriter.insertBefore(rightCurlyBrace, tips);
+    }
+
+    private String getSomeWhiteSpaceBefore(Token rightCurlyBrace) {
         int i = rightCurlyBrace.getTokenIndex();
         List<Token> wsChannel = tokens.getHiddenTokensToLeft(i, structLexer.WHITESPACE);
         String wss = "\n";
@@ -43,7 +46,6 @@ public class structRewriter extends structBaseListener {
                 wss = ws.getText();
             }
         }
-        String tips = "    " + st.render() + wss;
-        rewriter.insertBefore(rightCurlyBrace, tips);
+        return wss;
     }
 }
