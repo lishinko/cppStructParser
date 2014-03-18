@@ -35,7 +35,7 @@ public class structRewriter extends structBaseListener {
         Token rightCurlyBrace = ctx.rightCurlyBrace;
         ST st = group.getInstanceOf("decl");
         int i = rightCurlyBrace.getTokenIndex();
-        List<Token> wsChannel = tokens.getHiddenTokensToLeft(i, structLexer.WS);
+        List<Token> wsChannel = tokens.getHiddenTokensToLeft(i, structLexer.WHITESPACE);
         String wss = "\n";
         if (wsChannel != null) {
             Token ws = wsChannel.get(0);
