@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/methodDecl.stg" afterPath="$PROJECT_DIR$/methodDecl.stg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
+    <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -30,53 +27,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" line="45" class="com.woyao.XinggangLi.rules.structRewriter" package="com.woyao.XinggangLi.rules">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" line="40" class="com.woyao.XinggangLi.rules.structRewriter" package="com.woyao.XinggangLi.rules">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" line="37" class="com.woyao.XinggangLi.rules.structRewriter" package="com.woyao.XinggangLi.rules">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -123,28 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="structRewriter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="structRewriter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="structLexer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="structParser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2531915" vertical-offset="0" max-vertical-offset="8313">
+            <state line="34" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.5983437" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -155,6 +88,39 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="37" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1105">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generateParsingMethod.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="structParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="36" selection-start="2933" selection-end="2952" vertical-scroll-proportion="0.0" vertical-offset="1119" max-vertical-offset="8313">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,13 +169,14 @@
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/fieldsVisitor.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/structLexer.java" />
-        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
-        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
         <option value="$PROJECT_DIR$/struct.cpp" />
         <option value="$PROJECT_DIR$/methodDecl.stg" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java" />
       </list>
     </option>
   </component>
@@ -515,7 +482,11 @@
       <created>1395064049390</created>
       <updated>1395064049390</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;">
+      <created>1395113700843</created>
+      <updated>1395113700843</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -551,14 +522,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -575,6 +546,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -674,7 +646,7 @@
         <state line="32" column="5" selection-start="860" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
           <folding>
             <element signature="e#481#489#0" expanded="true" />
-            <element signature="e#1510#1518#0" expanded="true" />
+            <element signature="e#1510#1518#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -700,7 +672,7 @@
         <state line="32" column="5" selection-start="860" selection-end="1371" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="986">
           <folding>
             <element signature="e#481#489#0" expanded="true" />
-            <element signature="e#1510#1518#0" expanded="true" />
+            <element signature="e#1510#1518#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,35 +787,9 @@
         <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.19101124" vertical-offset="0" max-vertical-offset="1377" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="643" selection-end="643" vertical-scroll-proportion="0.42236024" vertical-offset="85" max-vertical-offset="918">
-          <folding>
-            <element signature="e#481#489#0" expanded="true" />
-            <element signature="e#1510#1518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="93" selection-start="1180" selection-end="1269" vertical-scroll-proportion="0.68530023" vertical-offset="264" max-vertical-offset="2465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/struct.tokens">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="331" selection-end="2023" vertical-scroll-proportion="0.44666666" vertical-offset="37" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/antlr/v4/runtime/BufferedTokenStream.class">
@@ -865,6 +811,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/commonLexerRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="536" selection-end="552" vertical-scroll-proportion="-2.836439" vertical-offset="1455" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/commonLexerRules.tokens">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.2815735" vertical-offset="0" max-vertical-offset="483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="26" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.33333334" vertical-offset="434" max-vertical-offset="2465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.14078675" vertical-offset="0" max-vertical-offset="2533">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="36" selection-start="2933" selection-end="2952" vertical-scroll-proportion="0.0" vertical-offset="1119" max-vertical-offset="8313">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="455" selection-end="455" vertical-scroll-proportion="0.33333334" vertical-offset="52" max-vertical-offset="918">
+          <folding>
+            <element signature="e#481#489#0" expanded="true" />
+            <element signature="method#getGeneratedMethods#0;class#structFieldsExtractor#0" expanded="true" />
+            <element signature="e#806#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/methodDecl.stg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="37" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -872,23 +866,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../antlr-4.1-complete.jar!/org/stringtemplate/v4/ST.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="28" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.3505618" vertical-offset="847" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1105">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2531915" vertical-offset="0" max-vertical-offset="8313">
+        <state line="34" column="30" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.5983437" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>

@@ -10,6 +10,7 @@ import org.stringtemplate.v4.STGroupFile;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Map;
 
 public class Main {
 
@@ -24,8 +25,8 @@ public class Main {
             ParseTree tree = parser.structDefine();
 
             ParseTreeWalker walker = new ParseTreeWalker();
-            structFieldsExtractor listener = new structFieldsExtractor();
-            walker.walk(listener, tree);
+            structFieldsExtractor extractor = new structFieldsExtractor();
+            walker.walk(extractor, tree);
 
             STGroup group = new STGroupFile(curPath + "\\methodDecl.stg");
             structRewriter rewriter = new structRewriter(tokens, group);
@@ -33,13 +34,17 @@ public class Main {
             System.out.println(rewriter.rewriter.getText());
             //System.out.println(listener.);
 
-//            for(Map.Entry<structParser.StructDefineContext, structFieldsExtractor.structInfo> entry : listener.getGeneratedMethods().entrySet()) {
+            for(Map.Entry<structParser.StructDefineContext, structFieldsExtractor.structInfo> entry : extractor.getGeneratedMethods().entrySet()) {
 //                System.out.println(entry.getValue().fullQualifiedName);
 //                for(String fieldName : entry.getValue().fieldNames) {
 //                    System.out.println("    " + fieldName);
 //                }
 //                System.out.println("    ");
-//            }
+                generateParsingMethod cpp = new generateParsingMethod(entry.getValue(), group);
+                System.out.println(cpp.generate());
+            }
+
+
 
 //            System.out.println(tree.toStringTree(parser));
         }
