@@ -22,7 +22,10 @@ import java.util.List;
 public class structRewriter extends structBaseListener {
     BufferedTokenStream tokens;
     STGroup group;
-    public TokenStreamRewriter rewriter;
+    public String getHeader() {
+        return rewriter.getText();
+    }
+    TokenStreamRewriter rewriter;
     public structRewriter(BufferedTokenStream tokens, STGroup group) {
         this.tokens = tokens;
         rewriter = new TokenStreamRewriter(tokens);

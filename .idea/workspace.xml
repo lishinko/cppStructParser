@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -73,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="structRewriter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="structRewriter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="51" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.36645964" vertical-offset="214" max-vertical-offset="748">
+            <state line="30" column="35" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -91,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="37" column="0" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.47021276" vertical-offset="408" max-vertical-offset="1020">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,9 +174,9 @@
         <option value="$PROJECT_DIR$/struct.cpp" />
         <option value="$PROJECT_DIR$/methodDecl.stg" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
-        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/generateParsingMethod.java" />
         <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java" />
+        <option value="$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java" />
       </list>
     </option>
   </component>
@@ -494,7 +495,11 @@
       <created>1395130825093</created>
       <updated>1395130825093</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加一些注释&#10;">
+      <created>1395130986734</created>
+      <updated>1395130986734</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -520,7 +525,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="878" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -536,7 +541,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -569,7 +574,8 @@
     <MESSAGE value="添加空格&#10;上次说的不能在开头添加空格的问题解决了。对antlr功能不了解导致的&#10;" />
     <MESSAGE value="可以生成了&#10;头文件，cpp文件都可以生成了！&#10;" />
     <MESSAGE value="重构下，提取一个方法。&#10;暂时能想到的就是这么多了，还有AutoInit，不过这个就不着急了" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构下，提取一个方法。&#10;暂时能想到的就是这么多了，还有AutoInit，不过这个就不着急了" />
+    <MESSAGE value="添加一些注释&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加一些注释&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -892,19 +898,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="1105">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="30" column="35" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structRewriter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/woyao/XinggangLi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="51" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.36645964" vertical-offset="214" max-vertical-offset="748">
-          <folding />
+        <state line="37" column="0" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.47021276" vertical-offset="408" max-vertical-offset="1020">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
