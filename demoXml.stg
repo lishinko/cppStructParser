@@ -1,0 +1,21 @@
+saveType() ::= "TiXmlElement"
+
+decl() ::= "void parse(const char* name, const <saveType()>& root);"
+impl_funcName(fullQualifiedName) ::= "void <fullQualifiedName>::parse(const char* name, const <saveType()>& root)"
+
+method(fullQualifiedName, fieldName) ::= <<
+<impl_funcName(fullQualifiedName)>{
+	<fieldName:field(); separator="\n">
+}
+>>
+
+field(name) ::= "::parse(<name>, <name:quoted()>,root);"
+quoted(name) ::= "\"<name>\""
+
+attribute(name) ::= "<name>=\"123\""
+node(name, attributes) ::= "\<<name> <attributes; sepatator=\" \"> /\>"
+nodeNested(name, attributes, nestedNodes) ::= <<
+\<<name> <attributes; separator=" ">\>
+    <nestedNodes: separator="\n">
+\</<name>\>
+>>

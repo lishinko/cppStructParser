@@ -7,9 +7,9 @@ import org.stringtemplate.v4.STGroup;
  * Created by lixg on 14-3-18.
  */
 public class generateParsingMethod {
-    structFieldsExtractor.structInfo info;
+    structInfo info;
     STGroup group;
-    public generateParsingMethod(structFieldsExtractor.structInfo info, STGroup group) {
+    public generateParsingMethod(structInfo info, STGroup group) {
         this.info = info;
         this.group = group;
     }

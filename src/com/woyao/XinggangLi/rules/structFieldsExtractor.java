@@ -12,13 +12,6 @@ import java.util.*;
  */
 public class structFieldsExtractor extends structBaseListener {
 
-    public static class structInfo {
-        public String fullQualifiedName;
-        public List<String> fieldNames = new ArrayList<String>();
-        structInfo(String fullQualifiedName) {
-            this.fullQualifiedName = fullQualifiedName;
-        }
-    }
     public Map<structParser.StructDefineContext, structInfo> getGeneratedMethods() {return generatedMethods;}
     Map<structParser.StructDefineContext, structInfo> generatedMethods = new HashMap<structParser.StructDefineContext, structInfo>();
     @Override public void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx) {
@@ -26,7 +19,7 @@ public class structFieldsExtractor extends structBaseListener {
         //添加struct的字段信息。
         structInfo info = generatedMethods.get(parentStruct);
         if (info == null) {
-            info = new structInfo(getFullQualifiedName(parentStruct));
+            info = new structInfo(parentStruct.INDENTIFIER().getText(), getFullQualifiedName(parentStruct));
         }
         info.fieldNames.add(ctx.INDENTIFIER().getText());
         generatedMethods.put(parentStruct, info);

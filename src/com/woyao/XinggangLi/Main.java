@@ -34,7 +34,7 @@ public class Main {
             System.out.println(rewriter.getHeader());
             //System.out.println(listener.);
 
-            for(Map.Entry<structParser.StructDefineContext, structFieldsExtractor.structInfo> entry : extractor.getGeneratedMethods().entrySet()) {
+            for(Map.Entry<structParser.StructDefineContext, structInfo> entry : extractor.getGeneratedMethods().entrySet()) {
                 generateParsingMethod cpp = new generateParsingMethod(entry.getValue(), group);
                 System.out.println(cpp.generate());
             }
