@@ -8,6 +8,7 @@ import com.woyao.XinggangLi.rules.*;
 import org.stringtemplate.v4.STGroup;
 import org.stringtemplate.v4.STGroupFile;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Map;
@@ -15,9 +16,15 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        String curPath = System.getProperty("user.dir");
+        if (args.length < 2) {
+            System.out.println("usage: cppStructParser cppFile templateFile");
+            return;
+        }
+        String cppFile = args[0];//System.getProperty("user.dir");
+        String templateFile = args[1];
 
-        ANTLRInputStream input = new ANTLRInputStream(new FileReader(curPath + "\\struct.cpp"));
+        File file = new File(cppFile);
+        ANTLRInputStream input = new ANTLRInputStream(new FileReader(file));
         structLexer lexer = new structLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         structParser parser = new structParser(tokens);
@@ -28,7 +35,7 @@ public class Main {
             structFieldsExtractor extractor = new structFieldsExtractor();
             walker.walk(extractor, tree);
 
-            STGroup group = new STGroupFile(curPath + "\\methodDecl.stg");
+            STGroup group = new STGroupFile(templateFile);
             structRewriter rewriter = new structRewriter(tokens, group);
             walker.walk(rewriter, tree);
             System.out.println(rewriter.getHeader());
