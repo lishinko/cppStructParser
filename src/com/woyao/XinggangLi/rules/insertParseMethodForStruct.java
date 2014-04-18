@@ -19,18 +19,22 @@ import org.stringtemplate.v4.*;
 
 import java.util.List;
 
-public class structRewriter extends structBaseListener {
+public class insertParseMethodForStruct extends structBaseListener {
     BufferedTokenStream tokens;
     STGroup group;
-    public String getHeader() {
-        return rewriter.getText();
-    }
     TokenStreamRewriter rewriter;
-    public structRewriter(BufferedTokenStream tokens, STGroup group) {
+
+    public insertParseMethodForStruct(BufferedTokenStream tokens, STGroup group) {
         this.tokens = tokens;
         rewriter = new TokenStreamRewriter(tokens);
         this.group = group;
+
     }
+
+    public String getHeader() {
+        return rewriter.getText();
+    }
+
     @Override public void exitStructDefine(@NotNull structParser.StructDefineContext ctx) {
         Token rightCurlyBrace = ctx.rightCurlyBrace;
         ST st = group.getInstanceOf("decl");

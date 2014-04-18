@@ -3,10 +3,25 @@ saveType() ::= "TiXmlElement"
 decl() ::= "void parse(const char* name, const <saveType()>& root);"
 impl_funcName(fullQualifiedName) ::= "void <fullQualifiedName>::parse(const char* name, const <saveType()>& root)"
 
+headWrap(upperCasedFileName, content) ::= <<
+    #ifndef <upperCasedFileName>
+    #define <upperCasedFileName>
+    <content>
+    ##endif
+>>
+fileGuardName(name, ext) ::= <<
+_<name>_<ext>_
+>>
+
+includeHeader(headerName) ::= <<
+#include"<headerName>"
+
+>>
 method(fullQualifiedName, fieldName) ::= <<
 <impl_funcName(fullQualifiedName)>{
 	<fieldName:field(); separator="\n">
 }
+
 >>
 
 field(name) ::= "::parse(<name>, <name:quoted()>,root);"
