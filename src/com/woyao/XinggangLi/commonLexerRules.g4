@@ -17,8 +17,7 @@ SEMICOLON : ';' ;
 COMMA : ',';
 
 
-INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//¹Ø¼ü×Ö£º
-
+INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//æ ‡è¯†ç¬¦
 WS : [ \t\r\n]+ -> channel(WHITESPACE) ; // skip spaces, tabs, newlines
 COMMENT
     :   '/*' .*? '*/' -> channel(COMMENTS)

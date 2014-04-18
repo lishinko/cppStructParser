@@ -13,7 +13,7 @@ field(name) ::= "::parse(<name>, <name:quoted()>,root);"
 quoted(name) ::= "\"<name>\""
 
 attribute(name) ::= "<name>=\"123\""
-node(name, attributes) ::= "\<<name> <attributes; sepatator=\" \"> /\>"
+node(name, attributes) ::= "\<<name> <attributes; separator=\" \"> /\>"
 nodeNested(name, attributes, nestedNodes) ::= <<
 \<<name> <attributes; separator=" ">\>
     <nestedNodes: separator="\n">

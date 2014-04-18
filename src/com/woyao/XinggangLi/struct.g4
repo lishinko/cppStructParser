@@ -6,21 +6,22 @@
 grammar struct;
 import cppLexerRules;
 
-//structDefine : STRUCT structBody ; //structÓÉstruct¹Ø¼ü×ÖºÍ½á¹¹ÌåÄÚÈİ×é³É
-//structBody : name=INDENTIFIER '{' field+ '}' ';'; //½á¹¹ÌåÄÚÈİÊÇÒ»ÏµÁĞµÄ×Ö¶Î
+//structDefine : STRUCT structBody ; //structç”±structå…³é”®å­—å’Œç»“æ„ä½“å†…å®¹ç»„æˆ
+//structBody : name=INDENTIFIER '{' field+ '}' ';'; //ç»“æ„ä½“å†…å®¹æ˜¯ä¸€ç³»åˆ—çš„å­—æ®µ
 structDefine : 'struct' name=INDENTIFIER leftCurlyBrace='{' structField rightCurlyBrace='}' ';';
-structField : (fieldDecl | structDefine)+;//structÄÚ²¿¿ÉÒÔÊÇ×Ö¶ÎÉùÃ÷»òÕßÄÚÇ¶µÄstruct¶¨Òå
+structField : (fieldDecl | structDefine)+;//structå†…éƒ¨å¯ä»¥æ˜¯å­—æ®µå£°æ˜æˆ–è€…å†…åµŒçš„structå®šä¹‰
 
-fieldDecl : fieldType INDENTIFIER ';' ;//×Ö¶ÎÉùÃ÷£ºÀàĞÍ ×Ö¶ÎÃû³Æ ·ÖºÅ
+fieldDecl : fieldType INDENTIFIER ';' ;//å­—æ®µå£°æ˜ï¼šç±»å‹ å­—æ®µåç§° åˆ†å·
 
-fieldType : normalType | genericCollType ;
+fieldType : normalType | nameInNamespace | genericCollType ;
 
-//Ä£°åÀàĞÍ£ºstd::vector<int>ÕâÑùµÄ£¬std::¿ÉÒÔÈ¥µô£¬
+//æ¨¡æ¿ç±»å‹ï¼šstd::vector<int>è¿™æ ·çš„ï¼Œstd::å¯ä»¥å»æ‰ï¼Œ
 genericCollType : 'std::'? COLLTYPE '<' elementType '>'
                 ;
+nameInNamespace : 'std::'? INDENTIFIER ;
 elementType : fieldType | mapType;
 normalType : KEYWORD | INDENTIFIER ;
 mapType : normalType ',' normalType ;
 
-COLLTYPE : MAP | VECTOR //Ä¿Ç°Ö§³Östd::mapºÍstd::vector
+COLLTYPE : MAP | VECTOR //ç›®å‰æ”¯æŒstd::mapå’Œstd::vector
          ;

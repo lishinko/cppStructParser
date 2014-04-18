@@ -43,6 +43,19 @@ public class structBaseListener implements structListener {
 	 * <p/>
 	 * The default implementation does nothing.
 	 */
+	@Override public void enterNameInNamespace(@NotNull structParser.NameInNamespaceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 * <p/>
+	 * The default implementation does nothing.
+	 */
+	@Override public void exitNameInNamespace(@NotNull structParser.NameInNamespaceContext ctx) { }
+
+	/**
+	 * {@inheritDoc}
+	 * <p/>
+	 * The default implementation does nothing.
+	 */
 	@Override public void enterStructField(@NotNull structParser.StructFieldContext ctx) { }
 	/**
 	 * {@inheritDoc}

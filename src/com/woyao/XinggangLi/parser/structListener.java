@@ -31,6 +31,17 @@ public interface structListener extends ParseTreeListener {
 	void exitStructDefine(@NotNull structParser.StructDefineContext ctx);
 
 	/**
+	 * Enter a parse tree produced by {@link structParser#nameInNamespace}.
+	 * @param ctx the parse tree
+	 */
+	void enterNameInNamespace(@NotNull structParser.NameInNamespaceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link structParser#nameInNamespace}.
+	 * @param ctx the parse tree
+	 */
+	void exitNameInNamespace(@NotNull structParser.NameInNamespaceContext ctx);
+
+	/**
 	 * Enter a parse tree produced by {@link structParser#structField}.
 	 * @param ctx the parse tree
 	 */

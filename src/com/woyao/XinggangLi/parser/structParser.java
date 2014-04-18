@@ -26,10 +26,11 @@ public class structParser extends Parser {
 	};
 	public static final int
 		RULE_structDefine = 0, RULE_structField = 1, RULE_fieldDecl = 2, RULE_fieldType = 3, 
-		RULE_genericCollType = 4, RULE_elementType = 5, RULE_normalType = 6, RULE_mapType = 7;
+		RULE_genericCollType = 4, RULE_nameInNamespace = 5, RULE_elementType = 6, 
+		RULE_normalType = 7, RULE_mapType = 8;
 	public static final String[] ruleNames = {
 		"structDefine", "structField", "fieldDecl", "fieldType", "genericCollType", 
-		"elementType", "normalType", "mapType"
+		"nameInNamespace", "elementType", "normalType", "mapType"
 	};
 
 	@Override
@@ -76,12 +77,12 @@ public class structParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(16); match(STRUCT);
-			setState(17); ((StructDefineContext)_localctx).name = match(INDENTIFIER);
-			setState(18); ((StructDefineContext)_localctx).leftCurlyBrace = match(LEFTPARANS);
-			setState(19); structField();
-			setState(20); ((StructDefineContext)_localctx).rightCurlyBrace = match(RIGHTPARANS);
-			setState(21); match(SEMICOLON);
+			setState(18); match(STRUCT);
+			setState(19); ((StructDefineContext)_localctx).name = match(INDENTIFIER);
+			setState(20); ((StructDefineContext)_localctx).leftCurlyBrace = match(LEFTPARANS);
+			setState(21); structField();
+			setState(22); ((StructDefineContext)_localctx).rightCurlyBrace = match(RIGHTPARANS);
+			setState(23); match(SEMICOLON);
 			}
 		}
 		catch (RecognitionException re) {
@@ -129,31 +130,31 @@ public class structParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(25); 
+			setState(27); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
-				setState(25);
+				setState(27);
 				switch (_input.LA(1)) {
 				case 1:
 				case COLLTYPE:
 				case KEYWORD:
 				case INDENTIFIER:
 					{
-					setState(23); fieldDecl();
+					setState(25); fieldDecl();
 					}
 					break;
 				case STRUCT:
 					{
-					setState(24); structDefine();
+					setState(26); structDefine();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
 				}
-				setState(27); 
+				setState(29); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << 1) | (1L << COLLTYPE) | (1L << STRUCT) | (1L << KEYWORD) | (1L << INDENTIFIER))) != 0) );
@@ -195,9 +196,9 @@ public class structParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(29); fieldType();
-			setState(30); match(INDENTIFIER);
-			setState(31); match(SEMICOLON);
+			setState(31); fieldType();
+			setState(32); match(INDENTIFIER);
+			setState(33); match(SEMICOLON);
 			}
 		}
 		catch (RecognitionException re) {
@@ -212,6 +213,9 @@ public class structParser extends Parser {
 	}
 
 	public static class FieldTypeContext extends ParserRuleContext {
+		public NameInNamespaceContext nameInNamespace() {
+			return getRuleContext(NameInNamespaceContext.class,0);
+		}
 		public GenericCollTypeContext genericCollType() {
 			return getRuleContext(GenericCollTypeContext.class,0);
 		}
@@ -236,24 +240,28 @@ public class structParser extends Parser {
 		FieldTypeContext _localctx = new FieldTypeContext(_ctx, getState());
 		enterRule(_localctx, 6, RULE_fieldType);
 		try {
-			setState(35);
-			switch (_input.LA(1)) {
-			case KEYWORD:
-			case INDENTIFIER:
+			setState(38);
+			switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
+			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(33); normalType();
+				setState(35); normalType();
 				}
 				break;
-			case 1:
-			case COLLTYPE:
+
+			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(34); genericCollType();
+				setState(36); nameInNamespace();
 				}
 				break;
-			default:
-				throw new NoViableAltException(this);
+
+			case 3:
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(37); genericCollType();
+				}
+				break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -293,18 +301,63 @@ public class structParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(38);
+			setState(41);
 			_la = _input.LA(1);
 			if (_la==1) {
 				{
-				setState(37); match(1);
+				setState(40); match(1);
 				}
 			}
 
-			setState(40); match(COLLTYPE);
-			setState(41); match(LEFT_ANGLE_BRACKET);
-			setState(42); elementType();
-			setState(43); match(RIGHT_ANGLE_BRACKET);
+			setState(43); match(COLLTYPE);
+			setState(44); match(LEFT_ANGLE_BRACKET);
+			setState(45); elementType();
+			setState(46); match(RIGHT_ANGLE_BRACKET);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class NameInNamespaceContext extends ParserRuleContext {
+		public TerminalNode INDENTIFIER() { return getToken(structParser.INDENTIFIER, 0); }
+		public NameInNamespaceContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_nameInNamespace; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof structListener ) ((structListener)listener).enterNameInNamespace(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof structListener ) ((structListener)listener).exitNameInNamespace(this);
+		}
+	}
+
+	public final NameInNamespaceContext nameInNamespace() throws RecognitionException {
+		NameInNamespaceContext _localctx = new NameInNamespaceContext(_ctx, getState());
+		enterRule(_localctx, 10, RULE_nameInNamespace);
+		int _la;
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(49);
+			_la = _input.LA(1);
+			if (_la==1) {
+				{
+				setState(48); match(1);
+				}
+			}
+
+			setState(51); match(INDENTIFIER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -341,21 +394,21 @@ public class structParser extends Parser {
 
 	public final ElementTypeContext elementType() throws RecognitionException {
 		ElementTypeContext _localctx = new ElementTypeContext(_ctx, getState());
-		enterRule(_localctx, 10, RULE_elementType);
+		enterRule(_localctx, 12, RULE_elementType);
 		try {
-			setState(47);
-			switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
+			setState(55);
+			switch ( getInterpreter().adaptivePredict(_input,5,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(45); fieldType();
+				setState(53); fieldType();
 				}
 				break;
 
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(46); mapType();
+				setState(54); mapType();
 				}
 				break;
 			}
@@ -390,12 +443,12 @@ public class structParser extends Parser {
 
 	public final NormalTypeContext normalType() throws RecognitionException {
 		NormalTypeContext _localctx = new NormalTypeContext(_ctx, getState());
-		enterRule(_localctx, 12, RULE_normalType);
+		enterRule(_localctx, 14, RULE_normalType);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(49);
+			setState(57);
 			_la = _input.LA(1);
 			if ( !(_la==KEYWORD || _la==INDENTIFIER) ) {
 			_errHandler.recoverInline(this);
@@ -437,13 +490,13 @@ public class structParser extends Parser {
 
 	public final MapTypeContext mapType() throws RecognitionException {
 		MapTypeContext _localctx = new MapTypeContext(_ctx, getState());
-		enterRule(_localctx, 14, RULE_mapType);
+		enterRule(_localctx, 16, RULE_mapType);
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(51); normalType();
-			setState(52); match(COMMA);
-			setState(53); normalType();
+			setState(59); normalType();
+			setState(60); match(COMMA);
+			setState(61); normalType();
 			}
 		}
 		catch (RecognitionException re) {
@@ -458,21 +511,23 @@ public class structParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\uacf5\uee8c\u4f5d\u8b0d\u4a45\u78bd\u1b2f\u3378\3\30:\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\3\2\3\2\3\2\3\2"+
-		"\3\2\3\2\3\3\3\3\6\3\34\n\3\r\3\16\3\35\3\4\3\4\3\4\3\4\3\5\3\5\5\5&\n"+
-		"\5\3\6\5\6)\n\6\3\6\3\6\3\6\3\6\3\6\3\7\3\7\5\7\62\n\7\3\b\3\b\3\t\3\t"+
-		"\3\t\3\t\3\t\2\n\2\4\6\b\n\f\16\20\2\3\4\2\6\6\25\25\66\2\22\3\2\2\2\4"+
-		"\33\3\2\2\2\6\37\3\2\2\2\b%\3\2\2\2\n(\3\2\2\2\f\61\3\2\2\2\16\63\3\2"+
-		"\2\2\20\65\3\2\2\2\22\23\7\5\2\2\23\24\7\25\2\2\24\25\7\16\2\2\25\26\5"+
-		"\4\3\2\26\27\7\17\2\2\27\30\7\23\2\2\30\3\3\2\2\2\31\34\5\6\4\2\32\34"+
-		"\5\2\2\2\33\31\3\2\2\2\33\32\3\2\2\2\34\35\3\2\2\2\35\33\3\2\2\2\35\36"+
-		"\3\2\2\2\36\5\3\2\2\2\37 \5\b\5\2 !\7\25\2\2!\"\7\23\2\2\"\7\3\2\2\2#"+
-		"&\5\16\b\2$&\5\n\6\2%#\3\2\2\2%$\3\2\2\2&\t\3\2\2\2\')\7\3\2\2(\'\3\2"+
-		"\2\2()\3\2\2\2)*\3\2\2\2*+\7\4\2\2+,\7\21\2\2,-\5\f\7\2-.\7\22\2\2.\13"+
-		"\3\2\2\2/\62\5\b\5\2\60\62\5\20\t\2\61/\3\2\2\2\61\60\3\2\2\2\62\r\3\2"+
-		"\2\2\63\64\t\2\2\2\64\17\3\2\2\2\65\66\5\16\b\2\66\67\7\24\2\2\678\5\16"+
-		"\b\28\21\3\2\2\2\7\33\35%(\61";
+		"\3\uacf5\uee8c\u4f5d\u8b0d\u4a45\u78bd\u1b2f\u3378\3\30B\4\2\t\2\4\3\t"+
+		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\3\2\3\2\3\2"+
+		"\3\2\3\2\3\2\3\2\3\3\3\3\6\3\36\n\3\r\3\16\3\37\3\4\3\4\3\4\3\4\3\5\3"+
+		"\5\3\5\5\5)\n\5\3\6\5\6,\n\6\3\6\3\6\3\6\3\6\3\6\3\7\5\7\64\n\7\3\7\3"+
+		"\7\3\b\3\b\5\b:\n\b\3\t\3\t\3\n\3\n\3\n\3\n\3\n\2\13\2\4\6\b\n\f\16\20"+
+		"\22\2\3\4\2\6\6\25\25?\2\24\3\2\2\2\4\35\3\2\2\2\6!\3\2\2\2\b(\3\2\2\2"+
+		"\n+\3\2\2\2\f\63\3\2\2\2\169\3\2\2\2\20;\3\2\2\2\22=\3\2\2\2\24\25\7\5"+
+		"\2\2\25\26\7\25\2\2\26\27\7\16\2\2\27\30\5\4\3\2\30\31\7\17\2\2\31\32"+
+		"\7\23\2\2\32\3\3\2\2\2\33\36\5\6\4\2\34\36\5\2\2\2\35\33\3\2\2\2\35\34"+
+		"\3\2\2\2\36\37\3\2\2\2\37\35\3\2\2\2\37 \3\2\2\2 \5\3\2\2\2!\"\5\b\5\2"+
+		"\"#\7\25\2\2#$\7\23\2\2$\7\3\2\2\2%)\5\20\t\2&)\5\f\7\2\')\5\n\6\2(%\3"+
+		"\2\2\2(&\3\2\2\2(\'\3\2\2\2)\t\3\2\2\2*,\7\3\2\2+*\3\2\2\2+,\3\2\2\2,"+
+		"-\3\2\2\2-.\7\4\2\2./\7\21\2\2/\60\5\16\b\2\60\61\7\22\2\2\61\13\3\2\2"+
+		"\2\62\64\7\3\2\2\63\62\3\2\2\2\63\64\3\2\2\2\64\65\3\2\2\2\65\66\7\25"+
+		"\2\2\66\r\3\2\2\2\67:\5\b\5\28:\5\22\n\29\67\3\2\2\298\3\2\2\2:\17\3\2"+
+		"\2\2;<\t\2\2\2<\21\3\2\2\2=>\5\20\t\2>?\7\24\2\2?@\5\20\t\2@\23\3\2\2"+
+		"\2\b\35\37(+\639";
 	public static final ATN _ATN =
 		ATNSimulator.deserialize(_serializedATN.toCharArray());
 	static {
