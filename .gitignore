@@ -218,3 +218,5 @@ pip-log.txt
 ## IntelliJ Idea
 #################
 out/
+output/
+.idea/
