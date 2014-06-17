@@ -17,120 +17,178 @@ public class structBaseListener implements structListener {
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterFieldType(@NotNull structParser.FieldTypeContext ctx) { }
-	/**
+    @Override
+    public void enterFieldType(@NotNull structParser.FieldTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitFieldType(@NotNull structParser.FieldTypeContext ctx) { }
-	/**
+    @Override
+    public void exitFieldType(@NotNull structParser.FieldTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterStructDefine(@NotNull structParser.StructDefineContext ctx) { }
-	/**
+    @Override
+    public void enterStructDefine(@NotNull structParser.StructDefineContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitStructDefine(@NotNull structParser.StructDefineContext ctx) { }
-	/**
+    @Override
+    public void exitStructDefine(@NotNull structParser.StructDefineContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterStructField(@NotNull structParser.StructFieldContext ctx) { }
-	/**
+    @Override
+    public void enterStructField(@NotNull structParser.StructFieldContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitStructField(@NotNull structParser.StructFieldContext ctx) { }
-	/**
+    @Override
+    public void exitStructField(@NotNull structParser.StructFieldContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterNormalType(@NotNull structParser.NormalTypeContext ctx) { }
-	/**
+    @Override
+    public void enterNormalType(@NotNull structParser.NormalTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitNormalType(@NotNull structParser.NormalTypeContext ctx) { }
-	/**
+    @Override
+    public void exitNormalType(@NotNull structParser.NormalTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterFieldDecl(@NotNull structParser.FieldDeclContext ctx) { }
-	/**
+    @Override
+    public void enterFieldDecl(@NotNull structParser.FieldDeclContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx) { }
-	/**
+    @Override
+    public void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterElementType(@NotNull structParser.ElementTypeContext ctx) { }
-	/**
+    @Override
+    public void enterElementType(@NotNull structParser.ElementTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitElementType(@NotNull structParser.ElementTypeContext ctx) { }
-	/**
+    @Override
+    public void exitElementType(@NotNull structParser.ElementTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterMapType(@NotNull structParser.MapTypeContext ctx) { }
-	/**
+    @Override
+    public void enterMapType(@NotNull structParser.MapTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitMapType(@NotNull structParser.MapTypeContext ctx) { }
-	/**
+    @Override
+    public void exitMapType(@NotNull structParser.MapTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterGenericCollType(@NotNull structParser.GenericCollTypeContext ctx) { }
-	/**
+    @Override
+    public void enterGenericCollType(@NotNull structParser.GenericCollTypeContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitGenericCollType(@NotNull structParser.GenericCollTypeContext ctx) { }
+    @Override
+    public void exitGenericCollType(@NotNull structParser.GenericCollTypeContext ctx) {
+    }
 
 	/**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
-	/**
+    @Override
+    public void enterEveryRule(@NotNull ParserRuleContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
-	/**
+    @Override
+    public void exitEveryRule(@NotNull ParserRuleContext ctx) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void visitTerminal(@NotNull TerminalNode node) { }
-	/**
+    @Override
+    public void visitTerminal(@NotNull TerminalNode node) {
+    }
+
+    /**
 	 * {@inheritDoc}
      *
      * <p>The default implementation does nothing.</p>
      */
-    @Override public void visitErrorNode(@NotNull ErrorNode node) { }
+    @Override
+    public void visitErrorNode(@NotNull ErrorNode node) {
+    }
 }

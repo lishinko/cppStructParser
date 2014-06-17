@@ -30,15 +30,15 @@ public class structLexer extends Lexer {
             "'\\u0013'", "'\\u0014'", "'\\u0015'", "'\\u0016'"
     };
     public static final String[] ruleNames = {
-		"T__0", "COLLTYPE", "STRUCT", "KEYWORD", "INT", "FLOAT", "DOUBLE", "STD_NAMESPACE", 
+            "T__0", "COLLTYPE", "STRUCT", "KEYWORD", "INT", "FLOAT", "DOUBLE", "STD_NAMESPACE",
 		"MAP", "VECTOR", "NAMESPACE_PREFIX", "LEFTPARANS", "RIGHTPARANS", "DOUBLE_COLON", 
 		"LEFT_ANGLE_BRACKET", "RIGHT_ANGLE_BRACKET", "SEMICOLON", "COMMA", "INDENTIFIER", 
 		"WS", "COMMENT", "LINE_COMMENT"
 	};
 
 
-	    public static final int WHITESPACE = 1;
-	    public static final int COMMENTS = 2;
+    public static final int WHITESPACE = HIDDEN + 1;
+    public static final int COMMENTS = HIDDEN + 2;
 
 
 	public structLexer(CharStream input) {
@@ -83,14 +83,16 @@ public class structLexer extends Lexer {
                 break;
         }
     }
-	private void LINE_COMMENT_action(RuleContext _localctx, int actionIndex) {
+
+    private void LINE_COMMENT_action(RuleContext _localctx, int actionIndex) {
 		switch (actionIndex) {
             case 2:
                 _channel = COMMENTS;
                 break;
         }
     }
-	private void COMMENT_action(RuleContext _localctx, int actionIndex) {
+
+    private void COMMENT_action(RuleContext _localctx, int actionIndex) {
 		switch (actionIndex) {
             case 1:
                 _channel = COMMENTS;
@@ -101,8 +103,8 @@ public class structLexer extends Lexer {
 	public static final String _serializedATN =
             "\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\2\30\u009e\b\1\4\2" +
                     "\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4" +
-                    "\13\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22"+
-		"\t\22\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\3\2\3\2\3\2\3"+
+                    "\13\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22" +
+                    "\t\22\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\3\2\3\2\3\2\3"+
 		"\2\3\2\3\2\3\3\3\3\5\38\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\5\3\5\3\5\5"+
 		"\5D\n\5\3\6\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3"+
 		"\b\3\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13\3"+
@@ -149,7 +151,7 @@ public class structLexer extends Lexer {
 
     static {
         _decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
-		for (int i = 0; i < _ATN.getNumberOfDecisions(); i++) {
+        for (int i = 0; i < _ATN.getNumberOfDecisions(); i++) {
 			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
 		}
 	}

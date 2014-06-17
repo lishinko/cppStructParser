@@ -5,8 +5,8 @@
  */
 lexer grammar commonLexerRules;
 @lexer::members {
-    public static final int WHITESPACE = 1;
-    public static final int COMMENTS = 2;
+    public static final int WHITESPACE = HIDDEN + 1;
+    public static final int COMMENTS = HIDDEN + 2;
 }
 LEFTPARANS : '{' ;
 RIGHTPARANS : '}' ;
@@ -17,7 +17,7 @@ SEMICOLON : ';' ;
 COMMA : ',';
 
 
-INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//¹Ø¼ü×Ö£º
+INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//ï¿½Ø¼ï¿½ï¿½Ö£ï¿½
 
 WS : [ \t\r\n]+ -> channel(WHITESPACE) ; // skip spaces, tabs, newlines
 COMMENT
