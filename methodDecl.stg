@@ -7,7 +7,7 @@ headWrap(upperCasedFileName, content) ::= <<
     #ifndef <upperCasedFileName>
     #define <upperCasedFileName>
     <content>
-    ##endif
+    #endif
 >>
 fileGuardName(name, ext) ::= <<
 _<name>_<ext>_
