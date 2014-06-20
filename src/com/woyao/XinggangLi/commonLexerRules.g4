@@ -8,15 +8,25 @@ lexer grammar commonLexerRules;
     public static final int WHITESPACE = HIDDEN + 1;
     public static final int COMMENTS = HIDDEN + 2;
 }
-LEFTPARANS : '{' ;
-RIGHTPARANS : '}' ;
+LEFT_CURLY_BRACE : '{' ;
+RIGHT_CURLY_BRACE: '}' ;
+
+fragment
 DOUBLE_COLON : '::';
+fragment
+COLON : ':' ;
+
+Digit : ('0'..'9')+ ;
+        
 LEFT_ANGLE_BRACKET : '<';
 RIGHT_ANGLE_BRACKET : '>';
 SEMICOLON : ';' ;
 COMMA : ',';
 LEFTBRACKET : '[' ;
 RIGHTBRACKET : ']' ;
+
+LEFT_PARANS : '(' ;
+RIGHT_PARANS : ')' ;
 
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//标识符
 

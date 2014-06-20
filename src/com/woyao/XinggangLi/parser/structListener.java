@@ -10,6 +10,34 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface structListener extends ParseTreeListener {
     /**
+     * Enter a parse tree produced by {@link structParser#concreteType}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterConcreteType(@NotNull structParser.ConcreteTypeContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#concreteType}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitConcreteType(@NotNull structParser.ConcreteTypeContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#param}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterParam(@NotNull structParser.ParamContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#param}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitParam(@NotNull structParser.ParamContext ctx);
+
+    /**
      * Enter a parse tree produced by {@link structParser#fieldType}.
      *
      * @param ctx the parse tree
@@ -22,20 +50,6 @@ public interface structListener extends ParseTreeListener {
      * @param ctx the parse tree
      */
     void exitFieldType(@NotNull structParser.FieldTypeContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link structParser#structDefine}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterStructDefine(@NotNull structParser.StructDefineContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link structParser#structDefine}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitStructDefine(@NotNull structParser.StructDefineContext ctx);
 
     /**
      * Enter a parse tree produced by {@link structParser#nameInNamespace}.
@@ -52,46 +66,32 @@ public interface structListener extends ParseTreeListener {
     void exitNameInNamespace(@NotNull structParser.NameInNamespaceContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link structParser#structField}.
+     * Enter a parse tree produced by {@link structParser#paramList}.
      *
      * @param ctx the parse tree
      */
-    void enterStructField(@NotNull structParser.StructFieldContext ctx);
+    void enterParamList(@NotNull structParser.ParamListContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link structParser#structField}.
+     * Exit a parse tree produced by {@link structParser#paramList}.
      *
      * @param ctx the parse tree
      */
-    void exitStructField(@NotNull structParser.StructFieldContext ctx);
+    void exitParamList(@NotNull structParser.ParamListContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link structParser#normalType}.
+     * Enter a parse tree produced by {@link structParser#inheritance}.
      *
      * @param ctx the parse tree
      */
-    void enterNormalType(@NotNull structParser.NormalTypeContext ctx);
+    void enterInheritance(@NotNull structParser.InheritanceContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link structParser#normalType}.
+     * Exit a parse tree produced by {@link structParser#inheritance}.
      *
      * @param ctx the parse tree
      */
-    void exitNormalType(@NotNull structParser.NormalTypeContext ctx);
-
-    /**
-     * Enter a parse tree produced by {@link structParser#fieldDecl}.
-     *
-     * @param ctx the parse tree
-     */
-    void enterFieldDecl(@NotNull structParser.FieldDeclContext ctx);
-
-    /**
-     * Exit a parse tree produced by {@link structParser#fieldDecl}.
-     *
-     * @param ctx the parse tree
-     */
-    void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx);
+    void exitInheritance(@NotNull structParser.InheritanceContext ctx);
 
     /**
      * Enter a parse tree produced by {@link structParser#elementType}.
@@ -108,6 +108,90 @@ public interface structListener extends ParseTreeListener {
     void exitElementType(@NotNull structParser.ElementTypeContext ctx);
 
     /**
+     * Enter a parse tree produced by {@link structParser#genericCollType}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterGenericCollType(@NotNull structParser.GenericCollTypeContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#genericCollType}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitGenericCollType(@NotNull structParser.GenericCollTypeContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#structDefine}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterStructDefine(@NotNull structParser.StructDefineContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#structDefine}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitStructDefine(@NotNull structParser.StructDefineContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#structField}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterStructField(@NotNull structParser.StructFieldContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#structField}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitStructField(@NotNull structParser.StructFieldContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#methodDecl}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterMethodDecl(@NotNull structParser.MethodDeclContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#methodDecl}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitMethodDecl(@NotNull structParser.MethodDeclContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#method}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterMethod(@NotNull structParser.MethodContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#method}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitMethod(@NotNull structParser.MethodContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#fieldDecl}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterFieldDecl(@NotNull structParser.FieldDeclContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#fieldDecl}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx);
+
+    /**
      * Enter a parse tree produced by {@link structParser#mapType}.
      *
      * @param ctx the parse tree
@@ -122,16 +206,30 @@ public interface structListener extends ParseTreeListener {
     void exitMapType(@NotNull structParser.MapTypeContext ctx);
 
     /**
-     * Enter a parse tree produced by {@link structParser#genericCollType}.
+     * Enter a parse tree produced by {@link structParser#methodDefine}.
      *
      * @param ctx the parse tree
      */
-    void enterGenericCollType(@NotNull structParser.GenericCollTypeContext ctx);
+    void enterMethodDefine(@NotNull structParser.MethodDefineContext ctx);
 
     /**
-     * Exit a parse tree produced by {@link structParser#genericCollType}.
+     * Exit a parse tree produced by {@link structParser#methodDefine}.
      *
      * @param ctx the parse tree
      */
-    void exitGenericCollType(@NotNull structParser.GenericCollTypeContext ctx);
+    void exitMethodDefine(@NotNull structParser.MethodDefineContext ctx);
+
+    /**
+     * Enter a parse tree produced by {@link structParser#methodSignature}.
+     *
+     * @param ctx the parse tree
+     */
+    void enterMethodSignature(@NotNull structParser.MethodSignatureContext ctx);
+
+    /**
+     * Exit a parse tree produced by {@link structParser#methodSignature}.
+     *
+     * @param ctx the parse tree
+     */
+    void exitMethodSignature(@NotNull structParser.MethodSignatureContext ctx);
 }
