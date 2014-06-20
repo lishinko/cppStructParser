@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="cppStructParser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/cppStructParser_jar</output-path>
+    <root id="root">
+      <element id="archive" name="cppStructParser.jar">
+        <element id="module-output" name="cppStructParser" />
+      </element>
+      <element id="library" level="project" name="antlr-4.2.2-complete" />
+    </root>
+  </artifact>
+</component>

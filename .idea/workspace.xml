@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="cf5bc243-ecbf-4e45-9fe0-5aa52e6dcc7c" name="Default" comment="将structInfo弄到外面去。" />
-    <list default="true" id="c7cab3e1-66da-4fcc-a1bd-f970211d25f4" name="generateDemoXml" comment="更新antlr的版本">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/commonLexerRules.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/struct.cpp" afterPath="$PROJECT_DIR$/struct.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/struct.g4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/struct.tokens" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/struct.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structBaseListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/rules/structFieldsExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.tokens" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structLexer.tokens" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" afterPath="$PROJECT_DIR$/src/com/woyao/XinggangLi/parser/structParser.java" />
+    <list default="true" id="c7cab3e1-66da-4fcc-a1bd-f970211d25f4" name="generateDemoXml" comment="可以parse定长数组了.这里,对定长数组和普通数据看起来是没有区分的,但是c++模板特化功能可以特化成功,所以做到这个样子就可以了">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cppStructParser.iws" />
@@ -633,7 +624,11 @@
       <created>1403009533155</created>
       <updated>1403009533155</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="可以parse定长数组了.这里,对定长数组和普通数据看起来是没有区分的,但是c++模板特化功能可以特化成功,所以做到这个样子就可以了">
+      <created>1403232362976</created>
+      <updated>1403232362976</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -669,6 +664,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,7 +677,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3285151" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Parse Tree" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -719,7 +714,8 @@
     <MESSAGE value="将structInfo弄到外面去。" />
     <MESSAGE value="将structInfo弄到外面去。&#10;" />
     <MESSAGE value="更新antlr的版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新antlr的版本" />
+    <MESSAGE value="可以parse定长数组了.这里,对定长数组和普通数据看起来是没有区分的,但是c++模板特化功能可以特化成功,所以做到这个样子就可以了" />
+    <option name="LAST_COMMIT_MESSAGE" value="可以parse定长数组了.这里,对定长数组和普通数据看起来是没有区分的,但是c++模板特化功能可以特化成功,所以做到这个样子就可以了" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -983,6 +979,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="2618">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,6 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7514">
           <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
