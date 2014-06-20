@@ -16,17 +16,17 @@ public class structParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, COLLTYPE=2, STRUCT=3, KEYWORD=4, INT=5, FLOAT=6, DOUBLE=7, STD_NAMESPACE=8, 
-		MAP=9, VECTOR=10, NAMESPACE_PREFIX=11, LEFTPARANS=12, RIGHTPARANS=13, 
-		DOUBLE_COLON=14, LEFT_ANGLE_BRACKET=15, RIGHT_ANGLE_BRACKET=16, SEMICOLON=17,
+		MAP=9, VECTOR=10, NAMESPACE_PREFIX=11, LEFTPARANS=12, RIGHTPARANS=13,
+            DOUBLE_COLON = 14, LEFT_ANGLE_BRACKET = 15, RIGHT_ANGLE_BRACKET = 16, SEMICOLON = 17,
             COMMA = 18, LEFTBRACKET = 19, RIGHTBRACKET = 20, INDENTIFIER = 21, WS = 22, COMMENT = 23,
             LINE_COMMENT = 24;
     public static final String[] tokenNames = {
-		"<INVALID>", "'std::'", "COLLTYPE", "'struct'", "KEYWORD", "'int'", "'float'", 
-		"'double'", "'std'", "'map'", "'vector'", "NAMESPACE_PREFIX", "'{'", "'}'",
+            "<INVALID>", "'std::'", "COLLTYPE", "'struct'", "KEYWORD", "'int'", "'float'",
+            "'double'", "'std'", "'map'", "'vector'", "NAMESPACE_PREFIX", "'{'", "'}'",
             "'::'", "'<'", "'>'", "';'", "','", "'['", "']'", "INDENTIFIER", "WS",
             "COMMENT", "LINE_COMMENT"
     };
-	public static final int
+    public static final int
 		RULE_structDefine = 0, RULE_structField = 1, RULE_fieldDecl = 2, RULE_fieldType = 3, 
 		RULE_genericCollType = 4, RULE_nameInNamespace = 5, RULE_elementType = 6, 
 		RULE_normalType = 7, RULE_mapType = 8;
@@ -50,7 +50,9 @@ public class structParser extends Parser {
     }
 
     @Override
-    public ATN getATN() { return _ATN; }
+    public ATN getATN() {
+        return _ATN;
+    }
 
 	public structParser(TokenStream input) {
 		super(input);
@@ -146,7 +148,7 @@ public class structParser extends Parser {
 				switch (_input.LA(1)) {
                     case T__0:
                     case COLLTYPE:
-				case KEYWORD:
+                    case KEYWORD:
 				case INDENTIFIER:
 					{
 					setState(25); fieldDecl();
@@ -167,7 +169,7 @@ public class structParser extends Parser {
             }
             while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << COLLTYPE) | (1L << STRUCT) | (1L << KEYWORD) | (1L << INDENTIFIER))) != 0));
             }
-		}
+        }
 		catch (RecognitionException re) {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
@@ -192,7 +194,7 @@ public class structParser extends Parser {
         }
 
         public FieldTypeContext fieldType() {
-			return getRuleContext(FieldTypeContext.class,0);
+            return getRuleContext(FieldTypeContext.class,0);
 		}
 		public FieldDeclContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -213,7 +215,7 @@ public class structParser extends Parser {
 		enterRule(_localctx, 4, RULE_fieldDecl);
         int _la;
         try {
-			enterOuterAlt(_localctx, 1);
+            enterOuterAlt(_localctx, 1);
 			{
 			setState(31); fieldType();
                 setState(32);
@@ -234,8 +236,7 @@ public class structParser extends Parser {
                 setState(38);
                 match(SEMICOLON);
             }
-        }
-		catch (RecognitionException re) {
+        } catch (RecognitionException re) {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
 			_errHandler.recover(this, re);
@@ -277,26 +278,26 @@ public class structParser extends Parser {
             setState(43);
             switch (getInterpreter().adaptivePredict(_input, 3, _ctx)) {
                 case 1:
-				enterOuterAlt(_localctx, 1);
+                    enterOuterAlt(_localctx, 1);
 				{
                     setState(40);
                     normalType();
                 }
-				break;
+                break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
                     setState(41);
                     nameInNamespace();
                 }
-				break;
+            break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
                     setState(42);
                     genericCollType();
                 }
-				break;
+            break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -340,10 +341,10 @@ public class structParser extends Parser {
                 _la = _input.LA(1);
                 if (_la == T__0) {
                     {
-                    setState(45);
-                    match(T__0);
+                        setState(45);
+                        match(T__0);
                     }
-			}
+                }
 
                 setState(48);
                 match(COLLTYPE);
@@ -354,7 +355,7 @@ public class structParser extends Parser {
                 setState(51);
                 match(RIGHT_ANGLE_BRACKET);
             }
-		}
+        }
 		catch (RecognitionException re) {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
@@ -393,15 +394,15 @@ public class structParser extends Parser {
                 _la = _input.LA(1);
                 if (_la == T__0) {
                     {
-                    setState(53);
-                    match(T__0);
+                        setState(53);
+                        match(T__0);
                     }
-			}
+                }
 
                 setState(56);
                 match(INDENTIFIER);
             }
-		}
+        }
 		catch (RecognitionException re) {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
@@ -441,19 +442,19 @@ public class structParser extends Parser {
             setState(60);
             switch (getInterpreter().adaptivePredict(_input, 6, _ctx)) {
                 case 1:
-				enterOuterAlt(_localctx, 1);
+                    enterOuterAlt(_localctx, 1);
 				{
                     setState(58);
                     fieldType();
                 }
-				break;
+                break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
                     setState(59);
                     mapType();
                 }
-				break;
+            break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -493,7 +494,7 @@ public class structParser extends Parser {
 			{
                 setState(62);
                 _la = _input.LA(1);
-			if ( !(_la==KEYWORD || _la==INDENTIFIER) ) {
+                if ( !(_la==KEYWORD || _la==INDENTIFIER) ) {
 			_errHandler.recoverInline(this);
 			}
 			consume();
@@ -544,7 +545,7 @@ public class structParser extends Parser {
                 setState(66);
                 normalType();
             }
-		}
+        }
 		catch (RecognitionException re) {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
@@ -558,7 +559,7 @@ public class structParser extends Parser {
 
 	public static final String _serializedATN =
             "\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\32G\4\2\t\2\4\3\t" +
-                    "\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\3\2\3\2\3\2"+
+                    "\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\3\2\3\2\3\2" +
                     "\3\2\3\2\3\2\3\2\3\3\3\3\6\3\36\n\3\r\3\16\3\37\3\4\3\4\3\4\3\4\3\4\5" +
                     "\4\'\n\4\3\4\3\4\3\5\3\5\3\5\5\5.\n\5\3\6\5\6\61\n\6\3\6\3\6\3\6\3\6\3" +
                     "\6\3\7\5\79\n\7\3\7\3\7\3\b\3\b\5\b?\n\b\3\t\3\t\3\n\3\n\3\n\3\n\3\n\2" +
@@ -579,7 +580,7 @@ public class structParser extends Parser {
             new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 
     static {
-		_decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
+        _decisionToDFA = new DFA[_ATN.getNumberOfDecisions()];
 		for (int i = 0; i < _ATN.getNumberOfDecisions(); i++) {
 			_decisionToDFA[i] = new DFA(_ATN.getDecisionState(i), i);
 		}
