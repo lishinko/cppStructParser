@@ -5,8 +5,8 @@
  */
 lexer grammar commonLexerRules;
 @lexer::members {
-    public static final int WHITESPACE = 1;
-    public static final int COMMENTS = 2;
+    public static final int WHITESPACE = HIDDEN + 1;
+    public static final int COMMENTS = HIDDEN + 2;
 }
 LEFTPARANS : '{' ;
 RIGHTPARANS : '}' ;
@@ -15,9 +15,16 @@ LEFT_ANGLE_BRACKET : '<';
 RIGHT_ANGLE_BRACKET : '>';
 SEMICOLON : ';' ;
 COMMA : ',';
+LEFTBRACKET : '[' ;
+RIGHTBRACKET : ']' ;
 
 
+<<<<<<< HEAD
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//标识符
+=======
+INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//�ؼ��֣�
+
+>>>>>>> origin/generateDemoXml
 WS : [ \t\r\n]+ -> channel(WHITESPACE) ; // skip spaces, tabs, newlines
 COMMENT
     :   '/*' .*? '*/' -> channel(COMMENTS)

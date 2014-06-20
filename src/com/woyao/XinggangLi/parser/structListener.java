@@ -1,4 +1,4 @@
-// Generated from E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\struct.g4 by ANTLR 4.1
+// Generated from E:\My Documents\NetBeansProjects\cppStructParser\src\com\woyao\XinggangLi\struct.g4 by ANTLR 4.x
 package com.woyao.XinggangLi.parser;
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
@@ -18,7 +18,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFieldType(@NotNull structParser.FieldTypeContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#structDefine}.
 	 * @param ctx the parse tree
@@ -29,7 +28,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStructDefine(@NotNull structParser.StructDefineContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#nameInNamespace}.
 	 * @param ctx the parse tree
@@ -51,7 +49,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitStructField(@NotNull structParser.StructFieldContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#normalType}.
 	 * @param ctx the parse tree
@@ -62,7 +59,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitNormalType(@NotNull structParser.NormalTypeContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#fieldDecl}.
 	 * @param ctx the parse tree
@@ -73,7 +69,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFieldDecl(@NotNull structParser.FieldDeclContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#elementType}.
 	 * @param ctx the parse tree
@@ -84,7 +79,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitElementType(@NotNull structParser.ElementTypeContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#mapType}.
 	 * @param ctx the parse tree
@@ -95,7 +89,6 @@ public interface structListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitMapType(@NotNull structParser.MapTypeContext ctx);
-
 	/**
 	 * Enter a parse tree produced by {@link structParser#genericCollType}.
 	 * @param ctx the parse tree
