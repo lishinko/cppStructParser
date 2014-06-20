@@ -15,6 +15,8 @@ LEFT_ANGLE_BRACKET : '<';
 RIGHT_ANGLE_BRACKET : '>';
 SEMICOLON : ';' ;
 COMMA : ',';
+LEFTBRACKET : '[' ;
+RIGHTBRACKET : ']' ;
 
 
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//�ؼ��֣�

@@ -12,9 +12,9 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * of the available methods.
  */
 public class structBaseListener implements structListener {
-	/**
-	 * {@inheritDoc}
-     *
+    /**
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -22,8 +22,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -31,8 +31,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -40,8 +40,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -49,8 +49,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -58,8 +58,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -67,8 +67,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -76,8 +76,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -85,8 +85,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -94,8 +94,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -103,8 +103,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -112,8 +112,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -121,8 +121,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -130,8 +130,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -139,8 +139,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -148,17 +148,17 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
     public void exitGenericCollType(@NotNull structParser.GenericCollTypeContext ctx) {
     }
 
-	/**
-	 * {@inheritDoc}
-     *
+    /**
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -166,8 +166,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -175,8 +175,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override
@@ -184,8 +184,8 @@ public class structBaseListener implements structListener {
     }
 
     /**
-	 * {@inheritDoc}
-     *
+     * {@inheritDoc}
+     * <p/>
      * <p>The default implementation does nothing.</p>
      */
     @Override

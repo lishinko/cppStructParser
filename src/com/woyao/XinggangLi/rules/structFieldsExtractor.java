@@ -21,7 +21,7 @@ public class structFieldsExtractor extends structBaseListener {
         if (info == null) {
             info = new structInfo(parentStruct.INDENTIFIER().getText(), getFullQualifiedName(parentStruct));
         }
-        info.fieldNames.add(ctx.INDENTIFIER().getText());
+        info.fieldNames.add(ctx.name.getText());
         generatedMethods.put(parentStruct, info);
     }
     private String getFullQualifiedName(structParser.StructDefineContext ctx) {
