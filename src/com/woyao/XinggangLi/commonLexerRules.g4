@@ -18,13 +18,8 @@ COMMA : ',';
 LEFTBRACKET : '[' ;
 RIGHTBRACKET : ']' ;
 
-
-<<<<<<< HEAD
 INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//标识符
-=======
-INDENTIFIER : ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')* ;//�ؼ��֣�
 
->>>>>>> origin/generateDemoXml
 WS : [ \t\r\n]+ -> channel(WHITESPACE) ; // skip spaces, tabs, newlines
 COMMENT
     :   '/*' .*? '*/' -> channel(COMMENTS)

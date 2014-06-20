@@ -11,11 +11,8 @@ import cppLexerRules;
 structDefine : 'struct' name=INDENTIFIER leftCurlyBrace='{' structField rightCurlyBrace='}' ';';
 structField : (fieldDecl | structDefine)+;//struct内部可以是字段声明或者内嵌的struct定义
 
-<<<<<<< HEAD
-fieldDecl : fieldType INDENTIFIER ';' ;//字段声明：类型 字段名称 分号
-=======
 fieldDecl : fieldType name=INDENTIFIER ('[' number=INDENTIFIER ']')? ';' ;//字段声明：类型 字段名称 分号
->>>>>>> origin/generateDemoXml
+
 
 fieldType : normalType | nameInNamespace | genericCollType ;
 

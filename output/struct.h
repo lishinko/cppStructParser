@@ -2,7 +2,7 @@
     #define _STRUCT_CPP_
     struct aStruct 
     {
-        int a; //这是一个注释
+        int a[playerNum]; //这是一个注释
         int b;/*另外一个注释*/
         struct anInner
         {
